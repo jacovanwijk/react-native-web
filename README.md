@@ -19,7 +19,7 @@ Install expo-cli `npm i -g expo-cli`
 
 - **Emulators**
 
-To be able to see what your app will look like on a real device install emulators. Macbook users are able to install emulators for both Android and iOS, Window users are only able to install a Android emulator. 
+To be able to see what your app will look like on a real device during development install emulators. Macbook users are able to install emulators for both Android and iOS, Window users are only able to install a Android emulator. 
 
 - Install guide to [Android](https://docs.expo.dev/workflow/android-studio-emulator/) emulator
 
