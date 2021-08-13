@@ -1,12 +1,45 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import {
+  Alert,
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  Platform,
+} from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View
+        style={{
+          backgroundColor: "tomato",
+          flex: 2,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Text>Open up App.tsx to start working!</Text>
+        <TouchableOpacity
+          onPress={() => {
+            if (Platform.OS === "web") {
+              alert("Im web");
+            } else {
+              Alert.alert("Im mobile");
+            }
+          }}
+        >
+          <Image
+            source={{
+              width: 200,
+              height: 300,
+              uri: "https://picsum.photos/200/300",
+            }}
+          />
+        </TouchableOpacity>
+      </View>
+      <View style={{ backgroundColor: "gold", flex: 1 }}></View>
     </View>
   );
 }
@@ -14,8 +47,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
