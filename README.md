@@ -39,5 +39,21 @@ start the project `expo start --web`
 
 ## Use the existing project
 
+clone the project `git clone https://github.com/jacovanwijk/react-native-web.git`
+
+install required packages `npm install`
+
+start the project `npm run start`
+
+## Usefull documentation
+
+- [React Native](https://reactnative.dev/docs/getting-started)
+
+- [Expo](https://expo.dev/)
+
+- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 
+
+- [Styled Components](https://styled-components.com/)
+
 
 
